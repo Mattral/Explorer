@@ -9,7 +9,7 @@ from ctransformers import AutoModelForCausalLM
 
 # Initialize the encoder and the chatbot
 encoder = SentenceTransformer('jinaai/jina-embedding-b-en-v1')
-client = QdrantClient(path="./db")
+client = QdrantClient(path="./db2")
 llm = AutoModelForCausalLM.from_pretrained("TheBloke/Llama-2-7B-Chat-GGUF", model_file="llama-2-7b-chat.Q3_K_S.gguf", model_type="llama")
 
 def process_and_index_pdf(file):

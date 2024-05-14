@@ -1,1 +1,1 @@
-# ExplorerChat
+# Explorer
